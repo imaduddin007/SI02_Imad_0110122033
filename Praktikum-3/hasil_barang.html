@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hasil pesan barang</title>
+    <style>
+        body
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+            background: #47d147;
+        }
+        .menu
+        {
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(255, 255, 255); 
+            margin-top: 15px; 
+            margin-bottom: 15px; 
+            border: 1px solid;
+        }
+        .hasil
+        {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+  </head>
+  <body>
+    <table class="menu">
+      <tr>
+        <td style="border-right: 1px solid; padding: 0 60px">home</td>
+        <td style="border-right: 1px solid; padding: 0 60px">create link</td>
+        <td style="border-right: 1px solid; padding: 0 60px">previous transaction</td>
+        <td style="border-right: 1px solid; padding: 0 60px">policy</td>
+        
+      </tr>
+    </table>
+
+    <form action="#" method="get">
+      <table class="hasil" cellpadding="10" width="960px">
+        <tbody>
+          <tr>
+            <td rowspan="10" width="160"><img src="img/hoodie.jpg" width="160" alt="ini photo" style="margin-bottom: 202px; border: 2px solid #000" /> <br /></td>
+            <td width="160px">Title :</td>
+            <td>Hoodie Terbaru 2022</td>
+          </tr>
+          <tr>
+            <td>Description :</td>
+            <td>
+              Year : 2022 <br />
+              Model : Norsbro Hoodie <br />
+              condition: baru
+            </td>
+          </tr>
+          <tr>
+            <td>Total Amount :</td>
+            <td>2.999,000</td>
+          </tr>
+          <tr>
+            <td>Payment :</td>
+            <td>007-223-105-1</td>
+          </tr>
+          <tr>
+            <td>Payment Type :</td>
+            <td>
+              <select>
+                <option>BSI</option>
+                <option>Mandiri</option>
+                <option>Aladin</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Account Holder :</td>
+            <td>
+              <input type="text" id ="pemegang akun" style ="width:340px" value="Imaduddin Abdur Rahman" checked>
+            </td>
+          </tr>
+          <tr>
+            <td >Account No:</td>
+            <td>
+              <input type="text" name="no account" style="width:380px"value="001-002-003-4" checked> <br>
+              <input type="checkbox" name="check" checked/> Send to number <br />
+              <input type="checkbox" name="check" checked/> Send to email
+            </td>
+          </tr>
+          <tr>
+            <td>Send to Mobile Phone:</td>
+            <td><input type="number" name="nomor telepon" value="085155081175"checked></td>
+          </tr>
+          <tr>
+            <td>Send to Email :</td>
+            <td><input type="email" name="email" style="width: 380px;" value="imaduddinabdurrahman01@gmail.com" checked /></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input
+                type="submit"
+                value="Pay using BSI"
+                style="background-color: #6b5f86; color: rgb(22, 12, 27); font-weight: bold; margin-left: 100px; padding: 3px 15px; border: 2px solid #000; border-radius: 1px; cursor: pointer; box-shadow: rgba(0, 0, 0, 0.4) 2.5px 2.5px 2.6px"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

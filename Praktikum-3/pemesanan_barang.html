@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesan barang</title>
+    <style>
+        body
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; background: #47d147
+        }
+        .menu
+        {
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(255, 255, 255); 
+            margin-top: 15px; 
+            margin-bottom: 15px; 
+            border: 1px solid; 
+            table-layout: auto;
+        }
+
+        .menu td
+        {
+            border-right: 0px solid; 
+            padding: 0 60px;
+        }
+        .barang
+        {
+            margin-left: auto;
+            margin-right: auto;
+            width: 980px;
+        }
+    </style>
+  </head>
+  <body>
+    <table class="menu">
+      <tr>
+        <td><a href="">Home</a></td>
+        <td><a href="">Generate Link</a></td>
+        <td><a href="">Transaction History</a></td>
+        <td><a href="">Policy</a></td>
+        <td><a href="">Logout</a> </td>
+      </tr>
+    </table>
+
+    <form action="hasil.html">
+      <table class="barang" cellpadding="10">
+        <tbody>
+          <tr>
+            <td rowspan="8" width="260">
+              <img src="img/hoodie.jpg" width="180" alt="ini photo" style="border: 2px solid rgb(0, 0, 0)" /> <br />
+              <button style="background-color: rgb(111, 116, 124); color: rgb(7, 7, 7); padding: 3px 15px; border: 2px solid #000; border-radius: 1px; cursor: pointer; box-shadow: rgba(0, 0, 0, 0.4) 2.5px 2.5px 2.6px; margin-bottom: 225px">
+                Uploading Picture
+              </button>
+            </td>
+            <td width="150px"> Title : </td>
+            <td><input type="text" name=" barang" /></td>
+          </tr>
+          <tr>
+            <td> Description : </td>
+            <td><textarea name="deskripsi" cols="30" rows="3"></textarea></td>
+          </tr>
+          <tr>
+            <td> Number Account : </td>
+            <td><input type="number" name="nomor akun" /></td>
+          </tr>
+          <tr>
+            <td> Bank : </td>
+            <td>
+              <select>
+                <option>BSI</option>
+                <option>Mandiri</option>
+                <option>Aladin</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td> Account Holder : </td>
+            <td><input type="text" name="aaccount holder" placeholder="Nama disini" /></td>
+          </tr>
+          <tr>
+            <td> Transaction : </td>
+            <td>
+              <input type="number" name="transaksi" min="0" max="10" placeholder="0" /> <br />* if the transaction is for more than 2 people, selcect 2 from the dropdwn list <br />
+              <input type="checkbox" name="check" checked/> Send to number <br />
+              <input type="checkbox" name="check" checked/> Send to email
+            </td>
+          </tr>
+          <tr>
+            <td> Send to Number : </td>
+            <td><input type="number" name="phone number" /></td>
+          </tr>
+          <tr>
+            <td> Send to Email : </td>
+            <td><input type="email" name="email" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input
+                type="submit"
+                value="Generate Nabr Link"
+                style="background-color: #6f7983; color: rgb(19, 12, 12); font-weight: bold; padding: 3px 15px; border: 2px solid #000; border-radius: 1px; cursor: pointer; box-shadow: rgba(0, 0, 0, 0.4) 2.5px 2.5px 2.6px"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
